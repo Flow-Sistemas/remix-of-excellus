@@ -8,59 +8,59 @@ const HERO_IMG = "/images/floor-laminate.png";
 
 const FEATURED = {
   quote:
-    "Trabalharam em três áreas da nossa casa — engineered no living, ceramic tile na cozinha e lixamento do piso antigo. O nível de acabamento é raríssimo de encontrar.",
+    "They worked on three areas of our home — engineered in the living room, ceramic tile in the kitchen, and sanding of the old floor. The level of finishing is extremely rare to find.",
   name: "Patricia M.",
-  role: "Residencial · Princeton, NJ",
+  role: "Residential · Princeton, NJ",
   img: "/images/floor-engineered.png",
 };
 
 const CARDS = [
   {
-    quote: "Instalação impecável de vinil em toda a clínica. Cumpriram o cronograma à risca.",
+    quote: "Flawless vinyl installation across our entire clinic. They stayed on schedule to the day.",
     name: "Dr. Robert L.",
-    role: "Comercial · Manhattan, NY",
+    role: "Commercial · Manhattan, NY",
     img: "/images/floor-vinyl.png",
   },
   {
-    quote: "Refizeram o piso de madeira do meu apartamento como se fosse novo. Equipe extremamente profissional.",
+    quote: "They refinished my apartment's hardwood floor like new. Extremely professional team.",
     name: "Camille R.",
-    role: "Residencial · Brooklyn, NY",
+    role: "Residential · Brooklyn, NY",
     img: "/images/floor-laminate.png",
   },
   {
-    quote: "Ceramic tile do banheiro com paginação perfeita. Rejunte alinhado, sem nenhuma falha.",
+    quote: "Bathroom ceramic tile with a perfect layout. Grout lines aligned, no flaws.",
     name: "Marco D.",
-    role: "Residencial · Philadelphia, PA",
+    role: "Residential · Philadelphia, PA",
     img: "/images/floor-ceramic.png",
   },
   {
-    quote: "14 anos de experiência ficam evidentes em cada detalhe. Indico sem hesitar.",
+    quote: "14 years of experience show in every detail. I recommend them without hesitation.",
     name: "Jennifer K.",
-    role: "Residencial · Edison, NJ",
+    role: "Residential · Edison, NJ",
     img: "/images/floor-carpet.png",
   },
 ];
 
 const STATS = [
-  { n: "500+", l: "Projetos entregues" },
-  { n: "14", l: "Anos de mercado" },
-  { n: "3", l: "Estados atendidos" },
-  { n: "98%", l: "Indicação de clientes" },
+  { n: "500+", l: "Projects delivered" },
+  { n: "14", l: "Years in business" },
+  { n: "3", l: "States served" },
+  { n: "98%", l: "Client referrals" },
 ];
 
 export default function TestimonialsPage() {
   return (
     <PageShell
-      slug="/depoimentos"
-      title="Depoimentos — New Creation Home Solutions"
-      description="Histórias reais de clientes que confiaram seus pisos à nossa equipe em NJ, NY e PA."
+      slug="/testimonials"
+      title="Testimonials — New Creation Home Solutions"
+      description="Real stories from clients who trusted their floors to our team in NJ, NY, and PA."
     >
       {() => (
         <>
           <PageHero
-            eyebrow="Depoimentos"
-            title="A confiança de quem viu o resultado de perto."
-            lead="14 anos de trabalho geram histórias. Aqui estão algumas delas."
+            eyebrow="Testimonials"
+            title="The trust of those who saw the results up close."
+            lead="14 years of work create stories. Here are a few of them."
             image={HERO_IMG}
           />
 
@@ -78,7 +78,7 @@ export default function TestimonialsPage() {
                   <div className="aspect-[4/3] sm:aspect-[5/4] overflow-hidden">
                     <img
                       src={FEATURED.img}
-                      alt="Piso instalado pela New Creation"
+                      alt="Floor installed by New Creation"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -129,13 +129,13 @@ export default function TestimonialsPage() {
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
               <div className="mb-10 sm:mb-16">
                 <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-4 sm:mb-5" style={{ color: "hsl(45 85% 46%)" }}>
-                  Mais depoimentos
+                  More testimonials
                 </p>
                 <h2
                   className="text-primary"
                   style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem, 4vw, 3rem)", fontWeight: 400, lineHeight: 1.1 }}
                 >
-                  Histórias que viram referência.
+                  Stories that set the standard.
                 </h2>
               </div>
 
@@ -151,7 +151,7 @@ export default function TestimonialsPage() {
                   >
                     {/* On mobile: top image, then quote below */}
                     <div className="aspect-[16/9] overflow-hidden">
-                      <img src={c.img} alt="Projeto de piso" className="w-full h-full object-cover" loading="lazy" />
+                      <img src={c.img} alt="Flooring project" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                     <div className="p-5 sm:p-6 lg:p-8 flex flex-col gap-4">
                       <div className="flex gap-1">
