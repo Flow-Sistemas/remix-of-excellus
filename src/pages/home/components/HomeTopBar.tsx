@@ -1,9 +1,9 @@
 ﻿import { Truck, MapPin, ShieldCheck } from "lucide-react";
 
 const items = [
-  { icon: Truck, label: "ORÇAMENTO SEM COMPROMISSO" },
-  { icon: MapPin, label: "ATENDIMENTO EM NJ · NY · PA" },
-  { icon: ShieldCheck, label: "14 ANOS DE EXPERIÊNCIA" },
+  { icon: Truck, label: "FREE NO-OBLIGATION QUOTE" },
+  { icon: MapPin, label: "SERVING NJ · NY · PA" },
+  { icon: ShieldCheck, label: "14 YEARS OF EXPERIENCE" },
 ];
 
 export default function HomeTopBar() {
