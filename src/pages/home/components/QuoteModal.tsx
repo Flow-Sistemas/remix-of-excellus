@@ -13,11 +13,11 @@ export default function QuoteModal({ open, onOpenChange }: { open: boolean; onOp
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const subject = encodeURIComponent("Nova solicitação de orçamento — New Creation Home Solutions");
+    const subject = encodeURIComponent("New quote request — New Creation Home Solutions");
     const body = encodeURIComponent(
-      `Nome: ${data.get("nome")}\nTelefone: ${data.get("telefone")}\nEmail: ${data.get("email")}\nEndereço: ${data.get(
+      `Name: ${data.get("nome")}\nPhone: ${data.get("telefone")}\nEmail: ${data.get("email")}\nAddress: ${data.get(
         "endereco",
-      )}\nCidade/Estado: ${data.get("cidade")}\nServiço desejado: ${data.get("servico")}\n\nObservações:\n${data.get("obs") || ""}`,
+      )}\nCity/State: ${data.get("cidade")}\nDesired service: ${data.get("servico")}\n\nNotes:\n${data.get("obs") || ""}`,
     );
     // Open user's email client as a fallback delivery
     window.location.href = `mailto:bean@newcreationhomesolutions.com?subject=${subject}&body=${body}`;
@@ -37,29 +37,29 @@ export default function QuoteModal({ open, onOpenChange }: { open: boolean; onOp
         {sent ? (
           <div className="text-center py-8">
             <CheckCircle2 className="h-14 w-14 text-accent mx-auto mb-4" />
-            <h3 className="font-heading text-2xl text-primary mb-2">Obrigado!</h3>
+            <h3 className="font-heading text-2xl text-primary mb-2">Thank you!</h3>
             <p className="text-muted-foreground">
-              Recebemos sua solicitação e entraremos em contato em breve.
+              We received your request and will get back to you shortly.
             </p>
           </div>
         ) : (
           <>
             <DialogHeader>
               <DialogTitle className="font-heading text-2xl text-primary">
-                Solicite um Orçamento Gratuito
+                Request a Free Quote
               </DialogTitle>
               <DialogDescription>
-                Preencha os dados e nossa equipe entrará em contato.
+                Fill in your details and our team will reach out.
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={handleSubmit} className="space-y-4 mt-2">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="nome">Nome</Label>
+                  <Label htmlFor="nome">Name</Label>
                   <Input id="nome" name="nome" required className="mt-1.5" />
                 </div>
                 <div>
-                  <Label htmlFor="telefone">Telefone</Label>
+                  <Label htmlFor="telefone">Phone</Label>
                   <Input id="telefone" name="telefone" required className="mt-1.5" />
                 </div>
               </div>
@@ -68,31 +68,31 @@ export default function QuoteModal({ open, onOpenChange }: { open: boolean; onOp
                 <Input id="email" type="email" name="email" required className="mt-1.5" />
               </div>
               <div>
-                <Label htmlFor="endereco">Endereço do Projeto</Label>
+                <Label htmlFor="endereco">Project Address</Label>
                 <Input id="endereco" name="endereco" className="mt-1.5" />
               </div>
               <div>
-                <Label htmlFor="cidade">Cidade / Estado</Label>
+                <Label htmlFor="cidade">City / State</Label>
                 <Input id="cidade" name="cidade" required className="mt-1.5" />
               </div>
               <div>
-                <Label htmlFor="servico">Tipo de serviço desejado</Label>
+                <Label htmlFor="servico">Desired service type</Label>
                 <Input
                   id="servico"
                   name="servico"
-                  placeholder="Ex: Piso de madeira, cerâmica, lixamento..."
+                  placeholder="E.g. Hardwood, ceramic tile, sanding..."
                   className="mt-1.5"
                 />
               </div>
               <div>
-                <Label htmlFor="obs">Observações (opcional)</Label>
+                <Label htmlFor="obs">Notes (optional)</Label>
                 <Textarea id="obs" name="obs" rows={3} className="mt-1.5" />
               </div>
               <Button
                 type="submit"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full h-12 font-semibold"
               >
-                Enviar Solicitação
+                Submit Request
               </Button>
             </form>
           </>
