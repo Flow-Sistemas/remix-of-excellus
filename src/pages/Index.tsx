@@ -21,8 +21,8 @@ export default function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <SeoHead
         slug="/"
-        fallbackTitle="New Creation Home Solutions — Instalação e Acabamento de Pisos em NJ, NY e PA"
-        fallbackDescription="Excelência em instalação e acabamento de pisos. 14 anos de experiência em projetos residenciais e comerciais em New Jersey, Nova York e Pensilvânia."
+        fallbackTitle="New Creation Home Solutions — Flooring Installation & Finishing in NJ, NY & PA"
+        fallbackDescription="Excellence in flooring installation and finishing. 14 years of experience on residential and commercial projects in New Jersey, New York, and Pennsylvania."
       />
       <HomeHeader onQuote={onQuote} />
       <main>
