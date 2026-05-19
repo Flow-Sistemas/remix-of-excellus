@@ -1,4 +1,5 @@
 ﻿import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -35,7 +36,7 @@ const services = [
   },
 ];
 
-export default function HomeServices({ onQuote }: { onQuote: () => void }) {
+export default function HomeServices(_props: { onQuote: () => void }) {
   return (
     <section id="servicos" className="py-14 sm:py-20 lg:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -46,13 +47,13 @@ export default function HomeServices({ onQuote }: { onQuote: () => void }) {
           >
             NOSSAS LINHAS DE PISOS
           </h2>
-          <button
-            onClick={onQuote}
+          <Link
+            to="/servicos"
             className="text-[10px] tracking-[0.3em] uppercase font-semibold text-primary flex items-center gap-2 group hover:gap-3 transition-all flex-shrink-0"
           >
             Ver Todas as Linhas
             <ArrowRight className="h-3.5 w-3.5" />
-          </button>
+          </Link>
         </div>
 
         {/* Top row — 2 large: side-by-side on sm+ */}
@@ -74,7 +75,7 @@ export default function HomeServices({ onQuote }: { onQuote: () => void }) {
 
 function ServiceCard({ title, text, img, large }: { title: string; text: string; img: string; large?: boolean }) {
   return (
-    <article className={`group relative overflow-hidden cursor-pointer ${large ? "h-[240px] sm:h-[300px] lg:h-[340px]" : "h-[180px] sm:h-[220px] lg:h-[260px]"}`}>
+    <Link to="/servicos" className={`group relative overflow-hidden cursor-pointer block ${large ? "h-[240px] sm:h-[300px] lg:h-[340px]" : "h-[180px] sm:h-[220px] lg:h-[260px]"}`}>
       <img
         src={img}
         alt={title}
@@ -101,6 +102,6 @@ function ServiceCard({ title, text, img, large }: { title: string; text: string;
           <ArrowRight className="h-2.5 w-2.5 sm:h-3 sm:w-3 transition-transform group-hover:translate-x-1" />
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
