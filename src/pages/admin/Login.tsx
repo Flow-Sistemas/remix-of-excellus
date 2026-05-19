@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
 import { Lock, Mail, Loader2 } from "lucide-react";
+import LOGO from "@/assets/new-creation-logo.png";
 
 export default function AdminLogin() {
   const [email, setEmail] = useState("");
@@ -88,8 +89,8 @@ export default function AdminLogin() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="text-center mb-8">
-          <img src="/logo.png" alt="All Shine Up" className="h-16 mx-auto mb-3" />
-          <p className="text-muted-foreground text-sm">Sign in to manage your dashboard</p>
+          <img src={LOGO} alt="New Creation Home Solutions" className="h-16 w-auto mx-auto mb-3" />
+          <p className="text-muted-foreground text-sm">Acesse o painel da New Creation Home Solutions</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
