@@ -4,34 +4,34 @@ import { Link } from "react-router-dom";
 const services = [
   {
     title: "ENGINEERED",
-    text: "Pisos de madeira engineered com estabilidade superior e visual sofisticado para ambientes residenciais e comerciais.",
+    text: "Engineered wood floors with superior stability and a refined look for residential and commercial spaces.",
     img: "/images/floor-engineered.png",
     large: true,
   },
   {
-    title: "LAMINADOS",
-    text: "Acabamento elegante, instalação rápida e alta resistência para o dia a dia da sua casa.",
+    title: "LAMINATE",
+    text: "Elegant finish, fast installation, and high resistance for everyday use in your home.",
     img: "/images/floor-laminate.png",
     large: true,
   },
   {
-    title: "VINIL",
-    text: "Durabilidade impermeável com design refinado para qualquer ambiente.",
+    title: "VINYL",
+    text: "Waterproof durability with refined design for any environment.",
     img: "/images/floor-vinyl.png",
   },
   {
     title: "CERAMIC TILE",
-    text: "Pisos, showers e backsplashes com assentamento preciso e acabamento impecável.",
+    text: "Floors, showers, and backsplashes with precise setting and flawless finishing.",
     img: "/images/floor-ceramic.png",
   },
   {
     title: "CARPET",
-    text: "Conforto, isolamento acústico e estilo para quartos e ambientes sociais.",
+    text: "Comfort, sound insulation, and style for bedrooms and living areas.",
     img: "/images/floor-carpet.png",
   },
   {
-    title: "LIXAMENTO & ACABAMENTO",
-    text: "Renovação completa de pisos existentes, devolvendo brilho, uniformidade e valor ao seu imóvel.",
+    title: "SANDING & REFINISHING",
+    text: "Full renewal of existing floors — restoring shine, uniformity, and value to your property.",
     img: "/images/floor-sanding.png",
   },
 ];
@@ -45,13 +45,13 @@ export default function HomeServices(_props: { onQuote: () => void }) {
             className="text-primary tracking-tight"
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 4vw, 2.75rem)", fontWeight: 500 }}
           >
-            NOSSAS LINHAS DE PISOS
+            OUR FLOORING LINES
           </h2>
           <Link
-            to="/servicos"
+            to="/services"
             className="text-[10px] tracking-[0.3em] uppercase font-semibold text-primary flex items-center gap-2 group hover:gap-3 transition-all flex-shrink-0"
           >
-            Ver Todas as Linhas
+            View All Lines
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
@@ -75,7 +75,7 @@ export default function HomeServices(_props: { onQuote: () => void }) {
 
 function ServiceCard({ title, text, img, large }: { title: string; text: string; img: string; large?: boolean }) {
   return (
-    <Link to="/servicos" className={`group relative overflow-hidden cursor-pointer block ${large ? "h-[240px] sm:h-[300px] lg:h-[340px]" : "h-[180px] sm:h-[220px] lg:h-[260px]"}`}>
+    <Link to="/services" className={`group relative overflow-hidden cursor-pointer block ${large ? "h-[240px] sm:h-[300px] lg:h-[340px]" : "h-[180px] sm:h-[220px] lg:h-[260px]"}`}>
       <img
         src={img}
         alt={title}
@@ -98,7 +98,7 @@ function ServiceCard({ title, text, img, large }: { title: string; text: string;
         </h3>
         <p className={`text-white/80 mb-2 sm:mb-4 font-light max-w-xs ${large ? "text-xs sm:text-sm" : "text-[11px] sm:text-xs hidden sm:block"}`}>{text}</p>
         <div className="flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] tracking-[0.25em] sm:tracking-[0.3em] uppercase font-semibold" style={{ color: "hsl(45 85% 65%)" }}>
-          Ver Detalhes
+          View Details
           <ArrowRight className="h-2.5 w-2.5 sm:h-3 sm:w-3 transition-transform group-hover:translate-x-1" />
         </div>
       </div>
