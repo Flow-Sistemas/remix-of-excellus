@@ -13,88 +13,88 @@ const SERVICES = [
     id: "hardwood",
     icon: TreePine,
     title: "Hardwood",
-    tag: "Madeira maciça",
-    text: "Pisos em madeira maciça com instalação precisa e acabamento valorizado por arquitetos e designers.",
+    tag: "Solid wood",
+    text: "Solid hardwood floors with precise installation and finishing trusted by architects and designers.",
     img: "/images/floor-engineered.png",
   },
   {
     id: "engineered",
     icon: Square,
     title: "Engineered Flooring",
-    tag: "Estabilidade superior",
-    text: "Tecnologia multicamadas com estabilidade dimensional ideal para qualquer ambiente, inclusive sobre piso radiante.",
+    tag: "Superior stability",
+    text: "Multi-layer technology with dimensional stability ideal for any space, including over radiant heating.",
     img: "/images/floor-laminate.png",
   },
   {
-    id: "laminados",
+    id: "laminate",
     icon: Ruler,
-    title: "Laminados",
-    tag: "Custo-benefício premium",
-    text: "Visual sofisticado, alta resistência ao tráfego e instalação ágil, com acabamento impecável.",
+    title: "Laminate",
+    tag: "Premium value",
+    text: "Sophisticated look, high traffic resistance, and fast installation — with flawless finishing.",
     img: "/images/floor-vinyl.png",
   },
   {
-    id: "vinil",
+    id: "vinyl",
     icon: Droplets,
-    title: "Vinil",
-    tag: "Impermeável & versátil",
-    text: "Pisos vinílicos LVT/LVP com alta resistência à umidade, ideais para cozinhas, banheiros e áreas comerciais.",
+    title: "Vinyl",
+    tag: "Waterproof & versatile",
+    text: "LVT/LVP vinyl floors with high moisture resistance, ideal for kitchens, bathrooms, and commercial areas.",
     img: "/images/floor-engineered.png",
   },
   {
     id: "ceramic",
     icon: Grid3x3,
     title: "Ceramic Tile",
-    tag: "Pisos & paredes",
-    text: "Assentamento preciso em pisos, com paginação inteligente e juntas perfeitamente alinhadas.",
+    tag: "Floors & walls",
+    text: "Precise floor setting with smart layout and perfectly aligned joints.",
     img: "/images/floor-ceramic.png",
   },
   {
     id: "carpet",
     icon: Sparkles,
     title: "Carpet",
-    tag: "Conforto residencial",
-    text: "Instalação profissional de carpetes com tensionamento adequado, emendas invisíveis e acabamento de excelência.",
+    tag: "Residential comfort",
+    text: "Professional carpet installation with proper tensioning, invisible seams, and excellent finishing.",
     img: "/images/floor-carpet.png",
   },
   {
     id: "showers",
     icon: ShowerHead,
     title: "Showers & Backsplashes",
-    tag: "Ceramic tile em áreas molhadas",
-    text: "Showers e backsplashes em ceramic tile com impermeabilização, paginação refinada e rejunte impecável.",
+    tag: "Ceramic tile in wet areas",
+    text: "Showers and backsplashes in ceramic tile with waterproofing, refined layout, and flawless grouting.",
     img: "/images/floor-ceramic.png",
   },
   {
     id: "refinishing",
     icon: Wrench,
-    title: "Lixamento & Acabamento",
-    tag: "Renovação de pisos existentes",
-    text: "Renove pisos de madeira existentes com lixamento profissional e acabamento de alta durabilidade.",
+    title: "Sanding & Refinishing",
+    tag: "Renewal of existing floors",
+    text: "Renew existing hardwood floors with professional sanding and high-durability finishing.",
     img: "/images/floor-sanding.png",
   },
 ];
 
 const PROCESS = [
-  { n: "01", title: "Diagnóstico", text: "Visita técnica, medição precisa e avaliação do contrapiso." },
-  { n: "02", title: "Especificação", text: "Sugestão de materiais, paginação e acabamentos alinhados ao projeto." },
-  { n: "03", title: "Instalação", text: "Execução com equipe especializada, materiais premium e zero improviso." },
-  { n: "04", title: "Acabamento", text: "Revisão detalhada, rodapés, finalização e entrega impecável." },
+  { n: "01", title: "Assessment", text: "On-site visit, precise measuring, and subfloor evaluation." },
+  { n: "02", title: "Specification", text: "Materials, layout, and finishes recommended in line with your project." },
+  { n: "03", title: "Installation", text: "Execution by a specialized team with premium materials and zero improvisation." },
+  { n: "04", title: "Finishing", text: "Detailed review, baseboards, finishing touches, and flawless handover." },
 ];
 
 export default function ServicesPage() {
   return (
     <PageShell
-      slug="/servicos"
-      title="Serviços — Pisos premium em NJ, NY e PA"
-      description="Hardwood, engineered, laminados, vinil, ceramic tile, carpet, lixamento e acabamento. Instalação de pisos premium."
+      slug="/services"
+      title="Services — Premium flooring in NJ, NY & PA"
+      description="Hardwood, engineered, laminate, vinyl, ceramic tile, carpet, sanding, and refinishing. Premium floor installation."
     >
       {({ onQuote }) => (
         <>
           <PageHero
-            eyebrow="Nossos Serviços"
-            title="Um catálogo completo de pisos premium, executado com precisão."
-            lead="Da seleção do material ao último rodapé, cobrimos todas as etapas — sempre com a mesma exigência de qualidade que nos acompanha há 14 anos."
+            eyebrow="Our Services"
+            title="A full catalog of premium floors, executed with precision."
+            lead="From material selection to the final baseboard, we cover every step — always with the same demanding quality that has guided us for 14 years."
             image={HERO_IMG}
           />
 
@@ -104,13 +104,13 @@ export default function ServicesPage() {
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
                 <div className="max-w-xl">
                   <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-5" style={{ color: "hsl(45 85% 46%)" }}>
-                    Catálogo
+                    Catalog
                   </p>
                   <h2
                     className="text-primary"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 3.6vw, 3rem)", fontWeight: 400, lineHeight: 1.1 }}
                   >
-                    Linhas de pisos & serviços especializados
+                    Flooring lines & specialized services
                   </h2>
                 </div>
                 <button
@@ -118,7 +118,7 @@ export default function ServicesPage() {
                   className="text-[10px] tracking-[0.3em] uppercase font-semibold flex items-center gap-2 group self-start md:self-end"
                   style={{ color: "hsl(45 85% 46%)" }}
                 >
-                  Solicitar Orçamento
+                  Request a Quote
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </button>
               </div>
@@ -166,13 +166,13 @@ export default function ServicesPage() {
             <div className="max-w-6xl mx-auto px-6 lg:px-10">
               <div className="max-w-2xl mb-16">
                 <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-5" style={{ color: "hsl(45 85% 46%)" }}>
-                  Processo
+                  Process
                 </p>
                 <h2
                   className="text-primary"
                   style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 3.6vw, 3rem)", fontWeight: 400, lineHeight: 1.1 }}
                 >
-                  Quatro etapas. Zero surpresas.
+                  Four steps. Zero surprises.
                 </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
@@ -198,13 +198,13 @@ export default function ServicesPage() {
                 className="max-w-2xl"
                 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", fontWeight: 400, lineHeight: 1.15 }}
               >
-                Pronto para transformar seus pisos com quem entende?
+                Ready to transform your floors with the experts?
               </h2>
               <Link
-                to="/contato"
+                to="/contact"
                 className="inline-flex items-center gap-3 px-8 h-12 text-[10px] tracking-[0.3em] uppercase font-semibold border border-[hsl(43_75%_60%)] text-[hsl(43_75%_65%)] hover:bg-[hsl(43_75%_60%)] hover:text-primary transition-colors"
               >
-                Falar com a equipe
+                Talk to the team
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>
