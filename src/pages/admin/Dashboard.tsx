@@ -74,7 +74,7 @@ export default function Dashboard() {
         <h1 className="text-2xl md:text-3xl font-bold" style={{ fontFamily: "var(--font-heading)", color: "hsl(30 10% 15%)" }}>
           Dashboard
         </h1>
-        <p className="text-muted-foreground text-sm mt-1">Visão geral do seu blog</p>
+        <p className="text-muted-foreground text-sm mt-1">Visão geral do painel — New Creation Home Solutions</p>
       </div>
 
       {/* Stat Cards */}
