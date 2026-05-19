@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { LayoutDashboard, FileText, FolderOpen, Image, Settings, ChevronLeft, ChevronRight, BarChart3, Home, MapPin, Search, Sparkles, Mail, Users, Kanban } from "lucide-react";
 import { cn } from "@/lib/utils";
+import LOGO from "@/assets/new-creation-logo.png";
 
 const links = [
   { to: "/admin", icon: LayoutDashboard, label: "Dashboard", end: true },
@@ -41,9 +42,9 @@ export default function AdminSidebar({ open, onToggle }: Props) {
         {/* Logo */}
         <div className="h-16 flex items-center justify-between px-4 border-b border-border shrink-0">
         {open ? (
-            <img src="/logo.png" alt="All Shine Up" className="h-9" />
+            <img src={LOGO} alt="New Creation Home Solutions" className="h-9 w-auto" />
           ) : (
-            <img src="/logo.png" alt="All Shine Up" className="h-7 mx-auto" />
+            <img src={LOGO} alt="New Creation Home Solutions" className="h-7 w-auto mx-auto" />
           )}
           <button onClick={onToggle} className="p-1.5 rounded-lg hover:bg-muted transition-colors hidden md:flex">
             {open ? <ChevronLeft className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
