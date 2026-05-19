@@ -39,7 +39,7 @@ export default function HomeHero({ onQuote }: { onQuote: () => void }) {
               textShadow: "0 2px 4px rgba(0,0,0,0.9), 0 1px 2px rgba(0,0,0,0.6)",
             }}
           >
-            Excelência em pisos há 14 anos
+            14 years of flooring excellence
           </p>
 
           <h1
@@ -53,11 +53,11 @@ export default function HomeHero({ onQuote }: { onQuote: () => void }) {
               textShadow: "0 4px 16px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.8)",
             }}
           >
-            <span className="block">Instalação e Acabamento</span>
+            <span className="block">Installation & Finishing</span>
             <span className="block italic font-semibold" style={{ color: "hsl(45 92% 58%)", textShadow: "0 4px 16px rgba(0,0,0,0.95)" }}>
-              de Pisos
+              of Floors
             </span>
-            <span className="block">para cada ambiente</span>
+            <span className="block">for every space</span>
           </h1>
 
           <p
@@ -66,8 +66,8 @@ export default function HomeHero({ onQuote }: { onQuote: () => void }) {
               textShadow: "0 2px 8px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.7)",
             }}
           >
-            Madeira, engineered, laminado, vinil, cerâmica e carpet — projetos residenciais e
-            comerciais em New Jersey, Nova York e Pensilvânia.
+            Hardwood, engineered, laminate, vinyl, ceramic tile, and carpet — residential
+            and commercial projects across New Jersey, New York, and Pennsylvania.
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
@@ -80,7 +80,7 @@ export default function HomeHero({ onQuote }: { onQuote: () => void }) {
                   "linear-gradient(135deg, hsl(45 92% 60%) 0%, hsl(45 88% 52%) 100%)",
               }}
             >
-              Solicitar Orçamento
+              Request a Quote
             </Button>
             <a
               href="tel:+17323206267"
