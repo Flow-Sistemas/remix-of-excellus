@@ -10,7 +10,7 @@ export default function HomeFooter() {
         <div className="col-span-2 lg:col-span-1">
           <img src={LOGO} alt="New Creation Home Solutions" className="h-16 sm:h-20 w-auto mb-4 sm:mb-6" />
           <p className="text-xs sm:text-sm leading-relaxed text-white/60 max-w-xs font-light">
-            Transformamos ambientes em experiências únicas com instalação e acabamento de pisos de alto padrão.
+            We turn spaces into unique experiences with high-end flooring installation and finishing.
           </p>
           <div className="flex gap-2.5 sm:gap-3 mt-5 sm:mt-6">
             {[
@@ -33,13 +33,13 @@ export default function HomeFooter() {
         </div>
 
         <div>
-          <h4 className="text-[10px] sm:text-[11px] tracking-[0.22em] sm:tracking-[0.25em] uppercase text-white font-semibold mb-4 sm:mb-6">Institucional</h4>
+          <h4 className="text-[10px] sm:text-[11px] tracking-[0.22em] sm:tracking-[0.25em] uppercase text-white font-semibold mb-4 sm:mb-6">Company</h4>
           <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm font-light">
             {[
-              ["Sobre Nós", "#sobre"],
-              ["Nossos Projetos", "#projetos"],
-              ["Linhas de Pisos", "#servicos"],
-              ["Contato", "#contato"],
+              ["About Us", "#sobre"],
+              ["Our Projects", "#projetos"],
+              ["Flooring Lines", "#servicos"],
+              ["Contact", "#contato"],
             ].map(([l, h]) => (
               <li key={l}><a href={h} className="hover:text-[hsl(43_70%_70%)] transition-colors">{l}</a></li>
             ))}
@@ -47,7 +47,7 @@ export default function HomeFooter() {
         </div>
 
         <div>
-          <h4 className="text-[10px] sm:text-[11px] tracking-[0.22em] sm:tracking-[0.25em] uppercase text-white font-semibold mb-4 sm:mb-6">Atendimento</h4>
+          <h4 className="text-[10px] sm:text-[11px] tracking-[0.22em] sm:tracking-[0.25em] uppercase text-white font-semibold mb-4 sm:mb-6">Contact</h4>
           <ul className="space-y-3 sm:space-y-4 text-xs sm:text-sm font-light">
             <li className="flex items-start gap-2.5 sm:gap-3">
               <Phone className="h-3 w-3 sm:h-3.5 sm:w-3.5 mt-0.5 sm:mt-1 flex-shrink-0" style={{ color: "hsl(45 85% 60%)" }} />
@@ -58,26 +58,26 @@ export default function HomeFooter() {
               <a href="mailto:bean@newcreationhomesolutions.com" className="hover:text-[hsl(43_70%_70%)] transition-colors break-all text-[11px] sm:text-sm">bean@newcreationhomesolutions.com</a>
             </li>
             <li className="text-white/60 pt-1 text-[11px] sm:text-sm">
-              Seg a Sex: 08h às 18h<br />Sáb: 08h às 12h
+              Mon–Fri: 8am to 6pm<br />Sat: 8am to 12pm
             </li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-[10px] sm:text-[11px] tracking-[0.22em] sm:tracking-[0.25em] uppercase text-white font-semibold mb-4 sm:mb-6">Área de Atuação</h4>
+          <h4 className="text-[10px] sm:text-[11px] tracking-[0.22em] sm:tracking-[0.25em] uppercase text-white font-semibold mb-4 sm:mb-6">Service Area</h4>
           <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm font-light">
             <li className="text-white/70">New Jersey</li>
-            <li className="text-white/70">Nova York</li>
-            <li className="text-white/70">Pensilvânia</li>
+            <li className="text-white/70">New York</li>
+            <li className="text-white/70">Pennsylvania</li>
           </ul>
           <p className="text-[10px] sm:text-xs text-white/50 mt-5 sm:mt-6 italic">
-            14 anos transformando ambientes com excelência.
+            14 years transforming spaces with excellence.
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 mt-10 sm:mt-14 lg:mt-16 pt-5 sm:pt-6 border-t border-white/10 text-[10px] sm:text-xs text-white/40 text-center font-light">
-        © {year} New Creation Home Solutions. Todos os direitos reservados.
+        © {year} New Creation Home Solutions. All rights reserved.
       </div>
     </footer>
   );
