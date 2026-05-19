@@ -23,7 +23,7 @@ export default function HomeCta({ onQuote }: { onQuote: () => void }) {
                 className="text-[10px] sm:text-[11px] tracking-[0.35em] sm:tracking-[0.4em] uppercase font-medium"
                 style={{ color: GOLD }}
               >
-                Vamos conversar
+                Let's talk
               </span>
             </div>
 
@@ -38,12 +38,12 @@ export default function HomeCta({ onQuote }: { onQuote: () => void }) {
                 color: NAVY,
               }}
             >
-              Pronto para<br />
+              Ready to<br />
               <span className="italic font-normal" style={{ color: GOLD }}>
-                transformar
+                transform
               </span>
               <br />
-              seu ambiente?
+              your space?
             </h2>
 
             <div className="h-px w-12 sm:w-14 my-5 sm:my-6" style={{ background: GOLD_SOFT }} />
@@ -52,7 +52,7 @@ export default function HomeCta({ onQuote }: { onQuote: () => void }) {
               className="max-w-md text-[13px] sm:text-[14px] leading-[1.75] font-light"
               style={{ color: "hsl(211 22% 38%)" }}
             >
-              Fale com um especialista da New Creation e descubra como podemos criar o espaço dos seus sonhos — com acabamento impecável e atendimento dedicado.
+              Talk to a New Creation specialist and discover how we can create the space of your dreams — with flawless finishing and dedicated service.
             </p>
 
             <div className="mt-6 sm:mt-7 flex flex-wrap items-center gap-2 sm:gap-3">
@@ -65,7 +65,7 @@ export default function HomeCta({ onQuote }: { onQuote: () => void }) {
                   color: "hsl(0 0% 100%)",
                 }}
               >
-                Solicitar Orçamento
+                Request a Quote
                 <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
 
@@ -75,7 +75,7 @@ export default function HomeCta({ onQuote }: { onQuote: () => void }) {
                 style={{ borderColor: GOLD_SOFT, color: NAVY }}
               >
                 <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4" style={{ color: NAVY }} />
-                Ligar agora
+                Call now
               </a>
             </div>
 
@@ -92,7 +92,7 @@ export default function HomeCta({ onQuote }: { onQuote: () => void }) {
                   <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <span>14 anos de experiência</span>
+              <span>14 years of experience</span>
               <span className="h-3 sm:h-3.5 w-px" style={{ background: GOLD_SOFT }} />
               <span>NJ · NY · PA</span>
             </div>
@@ -103,7 +103,7 @@ export default function HomeCta({ onQuote }: { onQuote: () => void }) {
         <div className="relative hidden lg:block">
           <img
             src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1800&q=90"
-            alt="Interior premium New Creation"
+            alt="New Creation premium interior"
             className="absolute inset-0 w-full h-full object-cover"
             loading="lazy"
           />
