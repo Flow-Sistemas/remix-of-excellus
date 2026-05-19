@@ -9,32 +9,32 @@ const STORY_IMG = "/images/floor-engineered.png";
 const CRAFT_IMG = "/images/floor-vinyl.png";
 
 const TIMELINE = [
-  { year: "2011", title: "O Início", text: "Fundada com o compromisso de elevar o padrão de instalação de pisos em New Jersey." },
-  { year: "2015", title: "Expansão Regional", text: "Atendimento estendido a Nova York e Pensilvânia, sempre com a mesma exigência." },
-  { year: "2019", title: "Catálogo Premium", text: "Parcerias com fornecedores de engineered, vinil e ceramic tile de alta performance." },
-  { year: "2025", title: "14 Anos de Excelência", text: "Centenas de projetos residenciais e comerciais entregues com acabamento impecável." },
+  { year: "2011", title: "The Beginning", text: "Founded with a commitment to raise the standard of flooring installation in New Jersey." },
+  { year: "2015", title: "Regional Expansion", text: "Service extended to New York and Pennsylvania, always with the same demanding standards." },
+  { year: "2019", title: "Premium Catalog", text: "Partnerships with high-performance engineered, vinyl, and ceramic tile suppliers." },
+  { year: "2025", title: "14 Years of Excellence", text: "Hundreds of residential and commercial projects delivered with flawless finishing." },
 ];
 
 const VALUES = [
-  { icon: Award, title: "Maestria", text: "Cada milímetro importa. Nivelamento, esquadro e alinhamento são tratados com rigor cirúrgico." },
-  { icon: ShieldCheck, title: "Confiança", text: "Comunicação transparente, prazos cumpridos e respeito absoluto pelo seu lar." },
-  { icon: Layers, title: "Materiais", text: "Trabalhamos somente com linhas de pisos premium, garantindo durabilidade real ao longo dos anos." },
-  { icon: Sparkles, title: "Acabamento", text: "O detalhe final é o que diferencia um piso bem instalado de uma obra-prima." },
+  { icon: Award, title: "Mastery", text: "Every millimeter matters. Leveling, squaring, and alignment are treated with surgical precision." },
+  { icon: ShieldCheck, title: "Trust", text: "Transparent communication, deadlines kept, and absolute respect for your home." },
+  { icon: Layers, title: "Materials", text: "We work only with premium flooring lines, ensuring true durability over the years." },
+  { icon: Sparkles, title: "Finishing", text: "The final detail is what separates a well-installed floor from a masterpiece." },
 ];
 
 export default function AboutPage() {
   return (
     <PageShell
-      slug="/sobre"
-      title="Sobre — New Creation Home Solutions"
-      description="Há 14 anos transformando ambientes com instalação e acabamento de pisos de alto padrão em NJ, NY e PA."
+      slug="/about"
+      title="About — New Creation Home Solutions"
+      description="14 years transforming spaces with high-end flooring installation and finishing in NJ, NY, and PA."
     >
       {() => (
         <>
           <PageHero
-            eyebrow="Nossa História"
-            title="Há 14 anos construindo pisos que duram gerações."
-            lead="Somos uma equipe especializada em instalação e acabamento de pisos premium, atuando com a precisão de uma boutique e a estrutura de uma empresa de referência em New Jersey, Nova York e Pensilvânia."
+            eyebrow="Our Story"
+            title="14 years building floors that last for generations."
+            lead="We are a team specialized in premium flooring installation and finishing, working with the precision of a boutique and the structure of a leading company across New Jersey, New York, and Pennsylvania."
             image={HERO_IMG}
           />
 
@@ -50,11 +50,11 @@ export default function AboutPage() {
                   className="lg:col-span-7 relative"
                 >
                   <div className="aspect-[4/3] sm:aspect-[5/4] lg:aspect-[5/6] overflow-hidden">
-                    <img src={STORY_IMG} alt="Instalação de piso premium" className="w-full h-full object-cover" />
+                    <img src={STORY_IMG} alt="Premium floor installation" className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute -bottom-4 sm:-bottom-6 -right-2 sm:-right-6 bg-[hsl(43_75%_60%)] text-primary px-5 sm:px-8 py-4 sm:py-6 hidden sm:block">
                     <p className="text-4xl sm:text-5xl font-light" style={{ fontFamily: "var(--font-display)" }}>14</p>
-                    <p className="text-[9px] sm:text-[10px] tracking-[0.25em] sm:tracking-[0.3em] uppercase font-semibold">anos de experiência</p>
+                    <p className="text-[9px] sm:text-[10px] tracking-[0.25em] sm:tracking-[0.3em] uppercase font-semibold">years of experience</p>
                   </div>
                 </motion.div>
 
@@ -66,23 +66,23 @@ export default function AboutPage() {
                   className="lg:col-span-5"
                 >
                   <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-4 sm:mb-5" style={{ color: "hsl(45 85% 46%)" }}>
-                    Nossa Filosofia
+                    Our Philosophy
                   </p>
                   <h2
                     className="text-primary mb-6 sm:mb-8"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 4vw, 3rem)", fontWeight: 400, lineHeight: 1.1 }}
                   >
-                    Pisos são a base de tudo. Tratamos como tal.
+                    Floors are the foundation of everything. We treat them that way.
                   </h2>
                   <div className="space-y-4 sm:space-y-5 text-sm sm:text-base text-muted-foreground font-light leading-relaxed">
                     <p>
-                      Começamos em 2011 com uma ideia simples: oferecer instalação e acabamento de pisos no padrão exigido por arquitetos, designers e clientes que não aceitam concessões.
+                      We started in 2011 with a simple idea: deliver flooring installation and finishing at the standard demanded by architects, designers, and clients who don't compromise.
                     </p>
                     <p>
-                      Hoje, somos referência em <span className="text-primary font-medium">hardwood, engineered, laminados, vinil, ceramic tile e carpet</span> — também com serviço completo de lixamento e acabamento de pisos existentes.
+                      Today, we are a reference in <span className="text-primary font-medium">hardwood, engineered, laminate, vinyl, ceramic tile, and carpet</span> — along with complete sanding and refinishing of existing floors.
                     </p>
                     <p>
-                      Cada projeto recebe a mesma atenção, seja uma reforma de cozinha ou uma residência inteira. É isso que mantém clientes voltando e indicando há mais de uma década.
+                      Every project receives the same attention, whether a kitchen remodel or a full home. That's what keeps clients coming back and referring us for over a decade.
                     </p>
                   </div>
                 </motion.div>
@@ -95,13 +95,13 @@ export default function AboutPage() {
             <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
               <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                 <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-4 sm:mb-5" style={{ color: "hsl(45 85% 46%)" }}>
-                  Nossa Trajetória
+                  Our Journey
                 </p>
                 <h2
                   className="text-primary"
                   style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 4vw, 3rem)", fontWeight: 400 }}
                 >
-                  Uma linha do tempo de excelência
+                  A timeline of excellence
                 </h2>
               </div>
 
@@ -147,13 +147,13 @@ export default function AboutPage() {
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
               <div className="mb-10 sm:mb-14 lg:mb-16">
                 <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-4 sm:mb-5" style={{ color: "hsl(45 85% 46%)" }}>
-                  Valores
+                  Values
                 </p>
                 <h2
                   className="text-primary"
                   style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.4rem, 4vw, 3rem)", fontWeight: 400, lineHeight: 1.1 }}
                 >
-                  O que orienta cada instalação que entregamos.
+                  What guides every installation we deliver.
                 </h2>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-px lg:bg-[hsl(38_25%_88%)] lg:border lg:border-[hsl(38_25%_88%)]">
@@ -182,14 +182,14 @@ export default function AboutPage() {
                 className="mb-5 sm:mb-8"
                 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 4.5vw, 3.75rem)", fontWeight: 400, lineHeight: 1.1 }}
               >
-                Mão de obra especializada, acabamento impecável.
+                Skilled craftsmanship, flawless finishing.
               </h2>
               <p className="text-white/75 font-light max-w-2xl mx-auto leading-relaxed text-sm sm:text-base lg:text-lg">
-                Cada profissional da nossa equipe é treinado dentro do nosso próprio padrão de qualidade. Por isso conseguimos garantir uniformidade e excelência em projetos de qualquer escala.
+                Every professional on our team is trained to our own quality standard. That's how we guarantee uniformity and excellence on projects of any scale.
               </p>
               <div className="mt-8 sm:mt-10 flex items-center justify-center gap-2 sm:gap-3 text-sm">
                 <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 flex-shrink-0" style={{ color: "hsl(45 85% 62%)" }} />
-                <span className="text-white/80 tracking-wider text-xs sm:text-sm">Atendimento em New Jersey · Nova York · Pensilvânia</span>
+                <span className="text-white/80 tracking-wider text-xs sm:text-sm">Serving New Jersey · New York · Pennsylvania</span>
               </div>
             </div>
           </section>

@@ -32,7 +32,7 @@ export default function HomeAbout() {
         <div className="max-w-xl">
           <div className="flex flex-col items-start mb-6 sm:mb-8">
             <span className="text-[10px] sm:text-[11px] tracking-[0.38em] sm:tracking-[0.42em] font-medium mb-3 sm:mb-4" style={{ color: GOLD }}>
-              QUEM SOMOS
+              WHO WE ARE
             </span>
             <div className="h-px w-12 sm:w-14" style={{ background: GOLD_SOFT }} />
           </div>
@@ -48,9 +48,9 @@ export default function HomeAbout() {
               letterSpacing: "-0.015em",
             }}
           >
-            Excelência em pisos e acabamentos que{" "}
+            Excellence in flooring and finishing that{" "}
             <span className="italic font-normal" style={{ color: GOLD }}>
-              transformam ambientes.
+              transforms spaces.
             </span>
           </h2>
 
@@ -59,12 +59,12 @@ export default function HomeAbout() {
           <div className="space-y-4 sm:space-y-5 text-[14px] sm:text-[15px] leading-[1.8] font-light" style={{ color: "hsl(211 22% 38%)" }}>
             <p>
               <strong className="font-semibold" style={{ color: NAVY }}>
-                A New Creation Home Solutions
+                New Creation Home Solutions
               </strong>{" "}
-              é uma empresa especializada em serviços de instalação e acabamento de pisos, atuando em New Jersey, Nova York e Pensilvânia. Com Helber Medeiros, conhecido como Bim BM, como fundador e com 14 anos de experiência no setor, a empresa se destaca pela qualidade de seus materiais e pela excelência de sua mão de obra.
+              is a company specialized in flooring installation and finishing, serving New Jersey, New York, and Pennsylvania. Founded by Helber Medeiros — known as Bim BM — with 14 years of industry experience, the company stands out for the quality of its materials and the excellence of its craftsmanship.
             </p>
             <p>
-              Oferecemos uma ampla gama de opções de pisos, incluindo madeira, engineered, laminados, vinil, cerâmica (pisos, showers e backsplashes) e carpet, garantindo soluções duradouras e visualmente atraentes para todos os tipos de projetos.
+              We offer a wide range of flooring options including hardwood, engineered, laminate, vinyl, ceramic tile (floors, showers, and backsplashes), and carpet — ensuring durable and visually stunning solutions for every type of project.
             </p>
           </div>
 
@@ -76,11 +76,11 @@ export default function HomeAbout() {
               <ShieldCheck className="h-4 w-4 sm:h-5 sm:w-5" style={{ color: GOLD }} strokeWidth={1.4} />
             </div>
             <span className="text-[12px] sm:text-[13px] font-medium" style={{ color: GOLD }}>
-              14 anos de experiência
+              14 years of experience
             </span>
             <span className="h-4 sm:h-5 w-px" style={{ background: GOLD_SOFT }} aria-hidden />
             <span className="text-[12px] sm:text-[13px] font-light" style={{ color: "hsl(211 22% 38%)" }}>
-              New Jersey, Nova York e Pensilvânia
+              New Jersey, New York & Pennsylvania
             </span>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function HomeAbout() {
             >
               <img
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=90"
-                alt="Sala de estar de luxo com piso de madeira"
+                alt="Luxury living room with hardwood floor"
                 className="w-full h-[220px] sm:h-[280px] lg:h-[400px] object-cover"
                 loading="lazy"
               />
@@ -112,7 +112,7 @@ export default function HomeAbout() {
             >
               <img
                 src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=900&q=90"
-                alt="Instalação profissional de piso"
+                alt="Professional floor installation"
                 className="w-full h-[130px] sm:h-[160px] lg:h-[210px] object-cover"
                 loading="lazy"
               />
@@ -124,7 +124,7 @@ export default function HomeAbout() {
             >
               <img
                 src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=90"
-                alt="Acabamento de cerâmica premium"
+                alt="Premium ceramic tile finishing"
                 className="w-full h-[130px] sm:h-[160px] lg:h-[210px] object-cover"
                 loading="lazy"
               />

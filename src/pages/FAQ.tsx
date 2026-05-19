@@ -11,53 +11,53 @@ const HERO_IMG =
 
 const CATEGORIES = [
   {
-    title: "Serviços & Produtos",
+    title: "Services & Products",
     items: [
       {
-        q: "Quais tipos de piso vocês instalam?",
-        a: "Trabalhamos com hardwood, engineered, laminados, vinil (LVT/LVP), ceramic tile e carpet. Também executamos lixamento e acabamento de pisos existentes.",
+        q: "What types of flooring do you install?",
+        a: "We work with hardwood, engineered, laminate, vinyl (LVT/LVP), ceramic tile, and carpet. We also handle sanding and refinishing of existing floors.",
       },
       {
-        q: "Vocês fazem showers e backsplashes em ceramic tile?",
-        a: "Sim. Executamos o assentamento completo de ceramic tile em áreas molhadas, incluindo impermeabilização, paginação e rejunte premium.",
+        q: "Do you handle ceramic tile showers and backsplashes?",
+        a: "Yes. We do full ceramic tile setting in wet areas, including waterproofing, layout, and premium grouting.",
       },
       {
-        q: "É possível renovar um piso de madeira antigo?",
-        a: "Sim. Nosso serviço de lixamento e acabamento devolve uniformidade, brilho e proteção a pisos existentes — uma alternativa elegante à troca completa.",
+        q: "Can you refinish an old hardwood floor?",
+        a: "Yes. Our sanding and refinishing service restores uniformity, shine, and protection to existing floors — an elegant alternative to a full replacement.",
       },
     ],
   },
   {
-    title: "Orçamento & Prazos",
+    title: "Quotes & Timelines",
     items: [
       {
-        q: "Como funciona o orçamento?",
-        a: "Após o primeiro contato, agendamos uma visita técnica para medições e diagnóstico. Em até 24h enviamos uma proposta detalhada por escrito.",
+        q: "How does the quote process work?",
+        a: "After first contact, we schedule an on-site visit for measurements and assessment. Within 24 hours we send a detailed written proposal.",
       },
       {
-        q: "Qual o prazo médio de uma instalação?",
-        a: "Depende do tipo de piso e da metragem, mas a maioria dos projetos residenciais é concluída em 3 a 7 dias úteis.",
+        q: "What's the typical installation timeline?",
+        a: "It depends on the floor type and square footage, but most residential projects are completed in 3 to 7 business days.",
       },
       {
-        q: "Vocês fornecem o material ou eu compro?",
-        a: "Podemos fornecer materiais premium das nossas parcerias ou trabalhar com produto comprado pelo cliente. Sempre com nota fiscal e garantia.",
+        q: "Do you supply the material or do I purchase it?",
+        a: "We can supply premium materials from our partners or work with product purchased by the client. Always with invoice and warranty.",
       },
     ],
   },
   {
-    title: "Atendimento & Cobertura",
+    title: "Service & Coverage",
     items: [
       {
-        q: "Em quais regiões vocês atendem?",
-        a: "Atendemos toda a tri-state area: New Jersey, Nova York e Pensilvânia — em projetos residenciais e comerciais.",
+        q: "What areas do you serve?",
+        a: "We serve the entire tri-state area: New Jersey, New York, and Pennsylvania — for residential and commercial projects.",
       },
       {
-        q: "Trabalham com arquitetos e designers de interiores?",
-        a: "Sim. Temos parcerias contínuas com profissionais da área e oferecemos suporte técnico durante a especificação do projeto.",
+        q: "Do you work with architects and interior designers?",
+        a: "Yes. We have ongoing partnerships with professionals in the field and offer technical support during project specification.",
       },
       {
-        q: "Qual a garantia dos serviços?",
-        a: "Oferecemos garantia formal sobre a mão de obra. A garantia do material segue as condições do fabricante.",
+        q: "What warranty do you offer?",
+        a: "We provide a formal workmanship warranty. Material warranty follows the manufacturer's terms.",
       },
     ],
   },
@@ -67,15 +67,15 @@ export default function FAQ() {
   return (
     <PageShell
       slug="/faq"
-      title="FAQ — Perguntas Frequentes — New Creation Home Solutions"
-      description="Dúvidas mais comuns sobre instalação de pisos premium, orçamentos e cobertura em NJ, NY e PA."
+      title="FAQ — Frequently Asked Questions — New Creation Home Solutions"
+      description="Common questions about premium flooring installation, quotes, and coverage in NJ, NY, and PA."
     >
       {() => (
         <>
           <PageHero
-            eyebrow="Perguntas Frequentes"
-            title="Tudo o que você precisa saber antes de começar."
-            lead="Reunimos as dúvidas mais comuns dos nossos clientes. Se a sua não estiver aqui, fale com a gente."
+            eyebrow="Frequently Asked Questions"
+            title="Everything you need to know before getting started."
+            lead="We gathered the most common questions from our clients. If yours isn't here, get in touch."
             image={HERO_IMG}
           />
 
@@ -93,16 +93,16 @@ export default function FAQ() {
                 className="text-primary mb-5"
                 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400 }}
               >
-                Sua dúvida não está aqui?
+                Don't see your question?
               </h2>
               <p className="text-muted-foreground font-light mb-8">
-                Estamos a uma mensagem de distância. Respondemos em até 24 horas.
+                We're one message away. We reply within 24 hours.
               </p>
               <Link
-                to="/contato"
+                to="/contact"
                 className="inline-flex items-center gap-2 h-12 px-8 text-[10px] tracking-[0.3em] uppercase font-semibold bg-primary text-white hover:bg-[hsl(211_80%_18%)] transition-colors"
               >
-                Fale com a equipe
+                Talk to the team
               </Link>
             </div>
           </section>

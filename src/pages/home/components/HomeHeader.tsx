@@ -5,12 +5,12 @@ import { Link, useLocation } from "react-router-dom";
 import LOGO from "@/assets/new-creation-logo.png";
 
 const NAV = [
-  { label: "Início", to: "/" },
-  { label: "Sobre", to: "/sobre" },
-  { label: "Serviços", to: "/servicos" },
-  { label: "Depoimentos", to: "/depoimentos" },
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
+  { label: "Testimonials", to: "/testimonials" },
   { label: "FAQ", to: "/faq" },
-  { label: "Contato", to: "/contato" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export default function HomeHeader({ onQuote }: { onQuote: () => void }) {
@@ -50,7 +50,7 @@ export default function HomeHeader({ onQuote }: { onQuote: () => void }) {
             onClick={onQuote}
             className="rounded-none px-7 h-11 text-[10px] tracking-[0.25em] uppercase font-semibold border border-[hsl(38_55%_45%)] bg-transparent text-[hsl(38_55%_45%)] hover:bg-[hsl(38_55%_45%)] hover:text-white transition-colors"
           >
-            Orçamento
+            Get a Quote
           </Button>
         </div>
 
@@ -77,7 +77,7 @@ export default function HomeHeader({ onQuote }: { onQuote: () => void }) {
               </Link>
             ))}
             <Button onClick={() => { setOpen(false); onQuote(); }} className="bg-[hsl(38_55%_45%)] text-white hover:bg-[hsl(38_55%_50%)] rounded-none">
-              Solicite um Orçamento
+              Request a Quote
             </Button>
           </nav>
         </div>

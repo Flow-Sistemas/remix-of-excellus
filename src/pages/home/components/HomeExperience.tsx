@@ -2,30 +2,30 @@
 
 const groups = [
   {
-    eyebrow: "Nossos Serviços",
-    title: "Soluções completas em pisos",
+    eyebrow: "Our Services",
+    title: "Complete flooring solutions",
     items: [
-      { icon: Layers, text: "Instalação de madeira, engineered, laminado, vinil, cerâmica e carpet." },
-      { icon: Sparkles, text: "Lixamento e acabamento de pisos existentes." },
-      { icon: Hammer, text: "Instalação de cerâmica em showers e backsplashes." },
+      { icon: Layers, text: "Installation of hardwood, engineered, laminate, vinyl, ceramic, and carpet." },
+      { icon: Sparkles, text: "Sanding and refinishing of existing floors." },
+      { icon: Hammer, text: "Ceramic tile installation in showers and backsplashes." },
     ],
   },
   {
-    eyebrow: "O que resolvemos",
-    title: "Sem dor de cabeça na sua obra",
+    eyebrow: "What we solve",
+    title: "No headaches on your project",
     items: [
-      { icon: ShieldCheck, text: "Profissionais qualificados e confiáveis, do início ao acabamento." },
-      { icon: Award, text: "Materiais duráveis e de alta qualidade, selecionados com critério." },
-      { icon: Layers, text: "Ampla variedade de opções de pisos para cada estilo e orçamento." },
+      { icon: ShieldCheck, text: "Qualified, trustworthy professionals from start to finish." },
+      { icon: Award, text: "Durable, high-quality materials carefully selected." },
+      { icon: Layers, text: "A wide range of flooring options for every style and budget." },
     ],
   },
   {
-    eyebrow: "Nossos Diferenciais",
-    title: "14 anos transformando ambientes",
+    eyebrow: "What Sets Us Apart",
+    title: "14 years transforming spaces",
     items: [
-      { icon: Award, text: "Experiência de 14 anos e produtos de alta qualidade." },
-      { icon: Hammer, text: "Mão de obra especializada com acabamento impecável." },
-      { icon: MapPin, text: "Atuação em New Jersey, Nova York e Pensilvânia." },
+      { icon: Award, text: "14 years of experience with high-quality products." },
+      { icon: Hammer, text: "Skilled craftsmanship with flawless finishing." },
+      { icon: MapPin, text: "Serving New Jersey, New York, and Pennsylvania." },
     ],
   },
 ];
@@ -39,7 +39,7 @@ export default function HomeExperience() {
             className="text-primary tracking-tight"
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 4.5vw, 3rem)", fontWeight: 500 }}
           >
-            A Experiência <span className="italic" style={{ color: "hsl(45 85% 46%)" }}>New Creation</span>
+            The <span className="italic" style={{ color: "hsl(45 85% 46%)" }}>New Creation</span> Experience
           </h2>
           <div className="mx-auto mt-4 sm:mt-5 h-px w-14 sm:w-16" style={{ background: "linear-gradient(90deg, transparent, hsl(45 85% 55%), transparent)" }} />
         </div>

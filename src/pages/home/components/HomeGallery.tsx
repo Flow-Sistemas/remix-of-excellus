@@ -2,8 +2,8 @@ import { useState } from "react";
 import { X } from "lucide-react";
 
 const images = [
-  { src: "/images/gallery-interior.png", label: "Residencial · Engineered Oak" },
-  { src: "/images/floor-ceramic.png", label: "Acabamento Premium" },
+  { src: "/images/gallery-interior.png", label: "Residential · Engineered Oak" },
+  { src: "/images/floor-ceramic.png", label: "Premium Finish" },
   { src: "/images/gallery-wide-plank.png", label: "Living · Wide Plank" },
 ];
 
@@ -15,17 +15,17 @@ export default function HomeGallery() {
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-12">
         <div className="text-center mb-10 sm:mb-14 lg:mb-20">
           <div className="text-[10px] sm:text-[11px] tracking-[0.28em] sm:tracking-[0.32em] uppercase font-semibold mb-3 sm:mb-4" style={{ color: "hsl(45 85% 48%)" }}>
-            Portfólio
+            Portfolio
           </div>
           <h2
             className="text-primary tracking-tight"
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 4vw, 3rem)", fontWeight: 500 }}
           >
-            AMBIENTES QUE INSPIRAM
+            SPACES THAT INSPIRE
           </h2>
           <div className="mx-auto mt-4 sm:mt-5 h-px w-10 sm:w-12" style={{ backgroundColor: "hsl(45 88% 52%)" }} />
           <p className="mt-4 sm:mt-5 text-xs sm:text-sm text-muted-foreground italic font-light">
-            Projetos reais, feitos para pessoas reais.
+            Real projects, made for real people.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function HomeGallery() {
             <div className="absolute inset-0 bg-gradient-to-t from-[hsl(211_60%_6%/0.55)] via-transparent to-transparent" />
             <div className="absolute inset-0 ring-1 ring-inset ring-white/5" />
             <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 text-left text-white">
-              <div className="text-[9px] sm:text-[10px] tracking-[0.3em] uppercase opacity-80">Projeto em destaque</div>
+              <div className="text-[9px] sm:text-[10px] tracking-[0.3em] uppercase opacity-80">Featured project</div>
               <div className="mt-1 text-xs sm:text-sm font-light">{images[0].label}</div>
             </div>
           </button>
@@ -57,7 +57,7 @@ export default function HomeGallery() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[hsl(211_60%_6%/0.5)] via-transparent to-transparent" />
                 <div className="absolute inset-0 ring-1 ring-inset ring-white/5" />
                 <div className="absolute bottom-3 sm:bottom-5 left-3 sm:left-5 right-3 sm:right-5 text-left text-white">
-                  <div className="text-[8px] sm:text-[9px] tracking-[0.3em] uppercase opacity-80">Projeto</div>
+                  <div className="text-[8px] sm:text-[9px] tracking-[0.3em] uppercase opacity-80">Project</div>
                   <div className="mt-0.5 text-[11px] sm:text-xs font-light">{img.label}</div>
                 </div>
               </button>
@@ -74,7 +74,7 @@ export default function HomeGallery() {
           <button
             className="absolute top-4 sm:top-6 right-4 sm:right-6 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20"
             onClick={() => setActive(null)}
-            aria-label="Fechar"
+            aria-label="Close"
           >
             <X className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>
