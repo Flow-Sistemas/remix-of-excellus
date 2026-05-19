@@ -1,16 +1,16 @@
 ﻿const items = [
   {
-    text: "Trabalho impecável do início ao fim. A equipe é extremamente profissional e o acabamento do piso de madeira ficou perfeito.",
+    text: "Flawless work from start to finish. The team is extremely professional and the hardwood floor finish came out perfect.",
     name: "John D.",
     location: "Newark, New Jersey",
   },
   {
-    text: "Recomendo de olhos fechados. Combinaram preço justo com qualidade premium e cumpriram todos os prazos combinados.",
+    text: "I recommend them without hesitation. They combined fair pricing with premium quality and met every deadline.",
     name: "Maria S.",
     location: "Brooklyn, New York",
   },
   {
-    text: "Profissionalismo e capricho em cada detalhe. O resultado superou nossas expectativas em todos os ambientes.",
+    text: "Professionalism and care in every detail. The result exceeded our expectations in every room.",
     name: "Robert K.",
     location: "Philadelphia, PA",
   },
@@ -25,7 +25,7 @@ export default function HomeTestimonials() {
             className="text-primary tracking-tight"
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.4rem, 4vw, 3rem)", fontWeight: 500 }}
           >
-            O QUE NOSSOS CLIENTES <span className="italic" style={{ color: "hsl(45 85% 46%)" }}>DIZEM</span>
+            WHAT OUR CLIENTS <span className="italic" style={{ color: "hsl(45 85% 46%)" }}>SAY</span>
           </h2>
           <div className="mx-auto mt-4 sm:mt-5 h-px w-14 sm:w-16" style={{ background: "linear-gradient(90deg, transparent, hsl(45 85% 55%), transparent)" }} />
         </div>
