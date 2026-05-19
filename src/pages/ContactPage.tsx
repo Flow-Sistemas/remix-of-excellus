@@ -11,12 +11,12 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const SERVICE_OPTIONS = [
   "Hardwood",
   "Engineered Flooring",
-  "Laminados",
-  "Vinil",
+  "Laminate",
+  "Vinyl",
   "Ceramic Tile",
   "Carpet",
-  "Lixamento e acabamento",
-  "Showers e backsplashes",
+  "Sanding & refinishing",
+  "Showers & backsplashes",
 ];
 
 const CONTACT_IMG =
@@ -32,12 +32,12 @@ export default function ContactPage() {
     const f = e.currentTarget;
     const d = new FormData(f);
     const body = encodeURIComponent(
-      `Nome: ${d.get("nome")}\nTelefone: ${d.get("telefone")}\nEmail: ${d.get("email")}\nEndereço: ${d.get(
+      `Name: ${d.get("nome")}\nPhone: ${d.get("telefone")}\nEmail: ${d.get("email")}\nAddress: ${d.get(
         "endereco",
-      )}\nCidade/Estado: ${d.get("cidade")}\nServiço: ${d.get("servico")}\n\nMensagem:\n${d.get("mensagem") || ""}`,
+      )}\nCity/State: ${d.get("cidade")}\nService: ${d.get("servico")}\n\nMessage:\n${d.get("mensagem") || ""}`,
     );
     window.location.href = `mailto:bean@newcreationhomesolutions.com?subject=${encodeURIComponent(
-      "Contato pelo site — New Creation Home Solutions",
+      "Website contact — New Creation Home Solutions",
     )}&body=${body}`;
     setSent(true);
     f.reset();
@@ -45,16 +45,16 @@ export default function ContactPage() {
 
   return (
     <PageShell
-      slug="/contato"
-      title="Contato — New Creation Home Solutions"
-      description="Fale com a equipe. Atendimento em New Jersey, Nova York e Pensilvânia."
+      slug="/contact"
+      title="Contact — New Creation Home Solutions"
+      description="Talk to our team. Serving New Jersey, New York, and Pennsylvania."
     >
       {() => (
         <>
           <PageHero
-            eyebrow="Contato"
-            title="Conte sobre o seu projeto. Cuidamos do resto."
-            lead="Atendemos residências e comércios em New Jersey, Nova York e Pensilvânia. Respondemos em até 24 horas."
+            eyebrow="Contact"
+            title="Tell us about your project. We'll handle the rest."
+            lead="We serve homes and businesses across New Jersey, New York, and Pennsylvania. We reply within 24 hours."
             image={HERO_IMG}
           />
 
@@ -74,31 +74,31 @@ export default function ContactPage() {
                       className="text-primary mb-4"
                       style={{ fontFamily: "var(--font-display)", fontSize: "2rem", fontWeight: 500 }}
                     >
-                      Obrigado pelo contato!
+                      Thank you for reaching out!
                     </h2>
                     <p className="text-muted-foreground font-light">
-                      Recebemos sua mensagem. Entraremos em contato em até 24 horas.
+                      We received your message. We'll be in touch within 24 hours.
                     </p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-7">
                     <div>
                       <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-3" style={{ color: "hsl(45 85% 46%)" }}>
-                        Formulário
+                        Form
                       </p>
                       <h2
                         className="text-primary"
                         style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem, 2.6vw, 2.25rem)", fontWeight: 400 }}
                       >
-                        Solicite uma proposta personalizada.
+                        Request a personalized proposal.
                       </h2>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <Field id="nome" label="Nome">
+                      <Field id="nome" label="Name">
                         <Input id="nome" name="nome" required className="form-field" />
                       </Field>
-                      <Field id="telefone" label="Telefone">
+                      <Field id="telefone" label="Phone">
                         <Input id="telefone" name="telefone" required className="form-field" />
                       </Field>
                     </div>
@@ -107,15 +107,15 @@ export default function ContactPage() {
                       <Input id="email" name="email" type="email" required className="form-field" />
                     </Field>
 
-                    <Field id="endereco" label="Endereço do projeto">
+                    <Field id="endereco" label="Project address">
                       <Input id="endereco" name="endereco" className="form-field" />
                     </Field>
 
-                    <Field id="cidade" label="Cidade / Estado">
-                      <Input id="cidade" name="cidade" required placeholder="Ex: Newark, NJ" className="form-field" />
+                    <Field id="cidade" label="City / State">
+                      <Input id="cidade" name="cidade" required placeholder="E.g. Newark, NJ" className="form-field" />
                     </Field>
 
-                    <Field id="servico" label="Tipo de serviço desejado">
+                    <Field id="servico" label="Desired service type">
                       <select
                         id="servico"
                         name="servico"
@@ -123,14 +123,14 @@ export default function ContactPage() {
                         defaultValue=""
                         className="form-field appearance-none w-full"
                       >
-                        <option value="" disabled>Selecione um serviço…</option>
+                        <option value="" disabled>Select a service…</option>
                         {SERVICE_OPTIONS.map((o) => (
                           <option key={o} value={o}>{o}</option>
                         ))}
                       </select>
                     </Field>
 
-                    <Field id="mensagem" label="Mensagem (opcional)">
+                    <Field id="mensagem" label="Message (optional)">
                       <Textarea id="mensagem" name="mensagem" rows={4} className="form-field !h-auto" />
                     </Field>
 
@@ -138,7 +138,7 @@ export default function ContactPage() {
                       type="submit"
                       className="w-full h-14 bg-primary text-white text-[10px] tracking-[0.32em] uppercase font-semibold hover:bg-[hsl(211_80%_18%)] transition-colors inline-flex items-center justify-center gap-3"
                     >
-                      Enviar mensagem
+                      Send message
                       <ArrowUpRight className="h-4 w-4" />
                     </button>
 
@@ -171,14 +171,14 @@ export default function ContactPage() {
                 className="lg:col-span-5 space-y-10"
               >
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img src={CONTACT_IMG} alt="Escritório New Creation" className="w-full h-full object-cover" />
+                  <img src={CONTACT_IMG} alt="New Creation workspace" className="w-full h-full object-cover" />
                 </div>
 
                 <div className="border-t border-[hsl(38_25%_82%)] pt-8 space-y-6">
-                  <InfoItem icon={Phone} label="Telefone" value="+1 (732) 320-6267" href="tel:+17323206267" />
+                  <InfoItem icon={Phone} label="Phone" value="+1 (732) 320-6267" href="tel:+17323206267" />
                   <InfoItem icon={Mail} label="Email" value="bean@newcreationhomesolutions.com" href="mailto:bean@newcreationhomesolutions.com" />
                   <InfoItem icon={Instagram} label="Instagram" value="@newcreationhomesolutions" href="https://instagram.com/newcreationhomesolutions" />
-                  <InfoItem icon={MapPin} label="Atuação" value="New Jersey · Nova York · Pensilvânia" />
+                  <InfoItem icon={MapPin} label="Service area" value="New Jersey · New York · Pennsylvania" />
                 </div>
               </motion.aside>
             </div>
@@ -188,7 +188,7 @@ export default function ContactPage() {
           <section className="relative bg-[hsl(210_30%_97%)] py-24 lg:py-32 overflow-hidden">
             <div className="max-w-6xl mx-auto px-6 lg:px-10 text-center">
               <p className="text-[10px] tracking-[0.42em] uppercase font-semibold mb-5" style={{ color: "hsl(45 85% 46%)" }}>
-                Cobertura
+                Coverage
               </p>
               <h2
                 className="text-primary mb-12"
