@@ -3,21 +3,21 @@
 const items = [
   {
     icon: Gem,
-    subtitle: "Projetos sob medida",
-    title: "Design Exclusivo",
-    text: "Projetos pensados para o seu estilo de vida, com materiais premium e acabamentos que valorizam cada ambiente.",
+    subtitle: "Tailored projects",
+    title: "Exclusive Design",
+    text: "Projects crafted for your lifestyle, with premium materials and finishes that elevate every space.",
   },
   {
     icon: Award,
-    subtitle: "Qualidade certificada",
-    title: "Materiais Premium",
-    text: "Acabamentos de alto padrão selecionados para garantir durabilidade, sofisticação e beleza duradoura.",
+    subtitle: "Certified quality",
+    title: "Premium Materials",
+    text: "High-end finishes selected to ensure lasting durability, sophistication, and beauty.",
   },
   {
     icon: Clock,
-    subtitle: "Compromisso total",
-    title: "Entrega Garantida",
-    text: "Prazo combinado é compromisso. Planejamento eficiente, execução impecável e atendimento humanizado.",
+    subtitle: "Total commitment",
+    title: "Guaranteed Delivery",
+    text: "Agreed deadlines are a commitment. Efficient planning, flawless execution, and personable service.",
   },
 ];
 
@@ -30,13 +30,13 @@ export default function HomeDifferentials() {
             className="text-[10px] sm:text-[11px] tracking-[0.28em] sm:tracking-[0.32em] uppercase font-semibold mb-3 sm:mb-4"
             style={{ color: "hsl(45 85% 46%)" }}
           >
-            Por que escolher a New Creation
+            Why choose New Creation
           </div>
           <h2
             className="text-primary tracking-tight max-w-4xl mx-auto px-4"
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 4.5vw, 3rem)", fontWeight: 600 }}
           >
-            EXCELÊNCIA QUE <span className="italic" style={{ color: "hsl(45 85% 46%)" }}>TRANSFORMA</span> CADA DETALHE
+            EXCELLENCE THAT <span className="italic" style={{ color: "hsl(45 85% 46%)" }}>TRANSFORMS</span> EVERY DETAIL
           </h2>
           <div
             className="mx-auto mt-4 sm:mt-5 h-px w-14 sm:w-16"
