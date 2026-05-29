@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send, Loader2, Bot, User, ArrowRight, Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+
 import ReactMarkdown from "react-markdown";
 
 type Msg = { role: "user" | "assistant"; content: string };
@@ -53,10 +53,9 @@ async function streamChat({ messages, onDelta, onDone }: { messages: Msg[]; onDe
   onDone();
 }
 
-type Props = { open: boolean; onClose: () => void };
+type Props = { open: boolean; onClose: () => void; onQuote?: () => void };
 
-export default function AIChatWidget({ open, onClose }: Props) {
-  const navigate = useNavigate();
+export default function AIChatWidget({ open, onClose, onQuote }: Props) {
   const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -186,7 +185,7 @@ export default function AIChatWidget({ open, onClose }: Props) {
             {/* CTA */}
             <div className="px-4 py-2 border-t border-border bg-muted/30">
               <button
-                onClick={() => { onClose(); navigate("/quote"); }}
+onClick={() => { onClose(); onQuote(); }}
                 className="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold text-white transition-all hover:scale-[1.02]"
                 style={{ background: "var(--gradient-gold)" }}
               >
