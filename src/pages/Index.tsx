@@ -37,7 +37,7 @@ export default function Index() {
       </main>
       <HomeFooter />
       <QuoteModal open={open} onOpenChange={setOpen} />
-      <FloatingSocial />
+      <FloatingSocial onQuote={onQuote} />
     </div>
   );
 }
