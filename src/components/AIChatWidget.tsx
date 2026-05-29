@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X, Phone, Send, Loader2, Bot, User, ArrowRight } from "lucide-react";
+import { X, Send, Loader2, Bot, User, ArrowRight, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 
@@ -53,10 +53,10 @@ async function streamChat({ messages, onDelta, onDone }: { messages: Msg[]; onDe
   onDone();
 }
 
-export default function AIChatWidget() {
+type Props = { open: boolean; onClose: () => void };
+
+export default function AIChatWidget({ open, onClose }: Props) {
   const navigate = useNavigate();
-  const [open, setOpen] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
   const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -94,71 +94,13 @@ export default function AIChatWidget() {
       });
     } catch (e: any) {
       console.error(e);
-      setMessages((prev) => [...prev, { role: "assistant", content: "Sorry, I'm having trouble connecting right now. Please try again or call us at (469) 679-2875." }]);
+      setMessages((prev) => [...prev, { role: "assistant", content: "Sorry, I'm having trouble connecting right now. Please try again or call us at (732) 320-6267." }]);
       setLoading(false);
     }
   };
 
   return (
     <>
-      {/* Main chat button */}
-      <AnimatePresence>
-        {!open && !showMenu && (
-          <motion.button
-            onClick={() => setShowMenu(true)}
-            className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-14 h-14 rounded-full bg-accent flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            aria-label="Chat with us"
-          >
-            <MessageCircle className="w-7 h-7 text-white" />
-          </motion.button>
-        )}
-      </AnimatePresence>
-
-      {/* Menu popup - SMS or Chat */}
-      <AnimatePresence>
-        {showMenu && !open && (
-          <motion.div
-            className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col gap-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-          >
-            <motion.a
-              href="sms:+14696792875"
-              className="flex items-center gap-2 px-4 py-3 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow"
-              whileHover={{ scale: 1.02 }}
-            >
-              <Phone className="w-5 h-5 text-accent" />
-              <div>
-                <p className="text-sm font-semibold text-foreground">SMS</p>
-                <p className="text-[11px] text-muted-foreground">(469) 679-2875</p>
-              </div>
-            </motion.a>
-            <motion.button
-              onClick={() => { setShowMenu(false); setOpen(true); }}
-              className="flex items-center gap-2 px-4 py-3 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow text-left"
-              whileHover={{ scale: 1.02 }}
-            >
-              <MessageCircle className="w-5 h-5 text-primary" />
-              <div>
-                <p className="text-sm font-semibold text-foreground">Chat with AI</p>
-                <p className="text-[11px] text-muted-foreground">Quick answers about our services</p>
-              </div>
-            </motion.button>
-            <button
-              onClick={() => setShowMenu(false)}
-              className="self-end p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors"
-            >
-              <X className="w-4 h-4 text-muted-foreground" />
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
       {/* Chat window */}
       <AnimatePresence>
         {open && (
@@ -171,15 +113,15 @@ export default function AIChatWidget() {
           >
             {/* Header */}
             <div className="px-4 py-3 border-b border-border flex items-center gap-3 shrink-0"
-              style={{ background: "linear-gradient(135deg, hsl(30 10% 10%), hsl(215 70% 20%))" }}>
+              style={{ background: "linear-gradient(135deg, hsl(30 10% 12%), hsl(43 60% 35%))" }}>
               <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
-                <Bot className="w-5 h-5 text-white" />
+                <Sparkles className="w-5 h-5 text-white" />
               </div>
               <div className="flex-1">
-                <p className="text-sm font-bold text-white">All Shine Up Assistant</p>
-                <p className="text-[11px] text-white/60">Ask about our cleaning services</p>
+                <p className="text-sm font-bold text-white">New Creation AI Assistant</p>
+                <p className="text-[11px] text-white/70">Ask about our flooring services</p>
               </div>
-              <button onClick={() => setOpen(false)} className="p-1.5 rounded-lg text-white/60 hover:text-white hover:bg-white/10 transition-colors">
+              <button onClick={onClose} className="p-1.5 rounded-lg text-white/60 hover:text-white hover:bg-white/10 transition-colors">
                 <X className="w-4 h-4" />
               </button>
             </div>
@@ -188,11 +130,11 @@ export default function AIChatWidget() {
             <div ref={scrollRef} className="flex-1 overflow-y-auto p-4 space-y-3">
               {messages.length === 0 && (
                 <div className="text-center py-8">
-                  <Bot className="w-12 h-12 mx-auto text-muted-foreground/30 mb-3" />
-                  <p className="text-sm font-medium text-foreground">Welcome to All Shine Up! 👋</p>
-                  <p className="text-xs text-muted-foreground mt-1">Ask me anything about our cleaning services.</p>
+                  <Sparkles className="w-12 h-12 mx-auto text-muted-foreground/30 mb-3" />
+                  <p className="text-sm font-medium text-foreground">Welcome to New Creation! 👋</p>
+                  <p className="text-xs text-muted-foreground mt-1">Ask me anything about our flooring services.</p>
                   <div className="mt-4 space-y-2">
-                    {["What services do you offer?", "How does deep cleaning work?", "Do you serve my area?"].map((q) => (
+                    {["Which flooring lines do you offer?", "Do you serve my area?", "How do I request a quote?"].map((q) => (
                       <button
                         key={q}
                         onClick={() => { setInput(q); }}
@@ -244,7 +186,7 @@ export default function AIChatWidget() {
             {/* CTA */}
             <div className="px-4 py-2 border-t border-border bg-muted/30">
               <button
-                onClick={() => { setOpen(false); navigate("/quote"); }}
+                onClick={() => { onClose(); navigate("/quote"); }}
                 className="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold text-white transition-all hover:scale-[1.02]"
                 style={{ background: "var(--gradient-gold)" }}
               >
