@@ -53,7 +53,7 @@ async function streamChat({ messages, onDelta, onDone }: { messages: Msg[]; onDe
   onDone();
 }
 
-type Props = { open: boolean; onClose: () => void; onQuote: () => void };
+type Props = { open: boolean; onClose: () => void; onQuote?: () => void };
 
 export default function AIChatWidget({ open, onClose, onQuote }: Props) {
   const [messages, setMessages] = useState<Msg[]>([]);
