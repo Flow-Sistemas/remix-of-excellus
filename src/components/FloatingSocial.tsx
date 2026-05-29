@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import AIChatWidget from "./AIChatWidget";
 
-export default function FloatingSocial({ onQuote }: { onQuote: () => void }) {
+export default function FloatingSocial({ onQuote }: { onQuote?: () => void }) {
   const [chatOpen, setChatOpen] = useState(false);
   return (
     <>
